@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigaton bar */
+
+body{
+    background-color: rgb(30, 30, 40);
+}
+
+nav{
+    height: 100vh;
+    color: white;
+    background-color: rgb(30, 0, 58);
+    width: 25%;
+    text-align: center;
+    position: fixed;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+nav ul li{
+    margin-top: 20px;
+    list-style-type: none;
+    border-top:  2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    transition: 1s;
+    text-transform: uppercase;
+}
+
+nav ul li:hover{
+    border-top: 2px solid rgb(100, 100, 135);
+    border-bottom: 2px solid rgb(100, 100, 135);
+    transition: 1s;
+    cursor: pointer;
+}
