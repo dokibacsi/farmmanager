@@ -1,19 +1,36 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(30, 30, 40);
+    width: 100%;
+}
+
+article{
+    margin-left: 350px;
+    max-width: 1000px;
+    padding-top: 20px;
+}
+
+button{
+    color: white;
+    background-image: linear-gradient(black, rgb(120, 120, 120));
+    margin-top: 10px;
+    padding: 5px;
 }
 
 /* Navigaton bar */
 
-body{
-    background-color: rgb(30, 30, 40);
-}
 
 nav{
     height: 100vh;
     color: white;
     background-color: rgb(30, 0, 58);
-    width: 25%;
+    width: 300px;
     text-align: center;
     position: fixed;
 }
@@ -38,4 +55,61 @@ nav ul li:hover{
     border-bottom: 2px solid rgb(100, 100, 135);
     transition: 1s;
     cursor: pointer;
+}
+
+nav footer{
+    margin-top: 69vh;
+}
+
+/* FarmCards */
+
+#farms{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#card{
+    border: 2px solid white;
+
+    border-radius: 5%;
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(rgb(185, 132, 141), rgb(111, 158, 111));
+}
+
+#card button:disabled{
+    background-image: linear-gradient(red, darkred);
+}
+
+
+#card img{
+    width: 50%;
+}
+
+/* Információs formula */
+
+#inForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    background-color: rgb(30, 30, 40);
+    color: white;
+    border: 2px solid white;
+    padding: 25px;
+}
+
+#inForm label, #inForm input{
+    margin: 10px;
+}
+
+#inForm input{
+    padding: 10px;
+}
+
+#inForm button{
+    width: 50%;
+    margin-left: 125px;
 }

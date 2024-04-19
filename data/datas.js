@@ -1,0 +1,1 @@
+export let dataList = JSON.parse(window.localStorage.getItem('datas')) || [];

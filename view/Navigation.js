@@ -11,6 +11,7 @@ class Navigation{
             txt += `<li id="${element}">${element}</li>`
         });
         txt += "</ul>"
+        txt += "<footer><button id='dataremover'>Adatok törlése</button></footer>"
 
         parent.append(txt);
     }
