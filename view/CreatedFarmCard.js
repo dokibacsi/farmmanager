@@ -16,7 +16,7 @@ class CreatedFarmCard{
         txt += `<div id=card>`
         txt += `<h1 id=name>${farmName}</h1>`
         txt += `<img src="../images/icons/farm-house.png">`
-        txt += `<h3>${lease} | ${date}</h3>`
+        txt += `<h3>${lease} | ${date.replaceAll("T", " ")}</h3>`
         txt += `<button id="open">Megjelenítés</button>`
         txt += `</div>`
         parent.append(txt)
